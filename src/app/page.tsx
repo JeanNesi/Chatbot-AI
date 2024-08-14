@@ -1,6 +1,6 @@
 "use client";
 
-import { Header, Message, Textarea } from "@/components";
+import { EmptyMessages, Header, Message, Textarea } from "@/components";
 import { useChat } from "ai/react";
 
 export default function Home() {
@@ -11,6 +11,8 @@ export default function Home() {
       <Header />
 
       <main className="px-6 pt-2 flex flex-col gap-4 overflow-auto w-full h-[calc(100vh_-_188px)] prose prose-slate prose-sm max-w-none">
+        {!messages.length && <EmptyMessages />}
+
         {messages.map((message) => (
           <Message
             key={message.id}
@@ -22,6 +24,7 @@ export default function Home() {
 
       <footer className="px-6 pb-6 mt-auto">
         <Textarea
+          placeholder="Mensagem Chatbot"
           value={input}
           onChange={(e) => setInput(e.target.value)}
           onKeyDown={(key) => {
