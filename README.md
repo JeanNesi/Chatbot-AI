@@ -20,7 +20,7 @@ ollama pull gemma2
 
 Clone este repositório:
 ```bash
-git clone
+git clone https://github.com/JeanNesi/Chatbot-AI.git
 ```
 
 Acesse a pasta:
