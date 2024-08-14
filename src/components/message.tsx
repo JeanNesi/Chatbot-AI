@@ -1,17 +1,19 @@
+import Markdown from "react-markdown";
+
 interface IMessage {
   message: string;
   userMessage: boolean;
 }
 
 const UserMessage = ({ message }: Omit<IMessage, "userMessage">) => (
-  <div className="flex max-w-80 ml-auto">
-    <div className="bg-blue-500 text-whi p-2 rounded-lg">{message}</div>
+  <div className="bg-slate-600 text-white m-0 text-whi px-3 rounded-lg max-w-[80%] ml-auto">
+    <Markdown className="m-0">{message}</Markdown>
   </div>
 );
 
 const BotMessage = ({ message }: Omit<IMessage, "userMessage">) => (
-  <div className="flex justify-end max-w-80">
-    <div className="bg-gray-200 p-2 rounded-lg">{message}</div>
+  <div className="bg-slate-600 text-white px-3 rounded-lg max-w-[80%] w-fit">
+    <Markdown>{message}</Markdown>
   </div>
 );
 

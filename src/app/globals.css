@@ -32,8 +32,8 @@
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    --background: 0 0% 13%;
+    --foreground: 0 40% 98%;
     --card: 222.2 84% 4.9%;
     --card-foreground: 210 40% 98%;
     --popover: 222.2 84% 4.9%;
@@ -63,7 +63,19 @@
   * {
     @apply border-border;
   }
+
+  /* html {
+    transition: background-color var(--transition-duration) ease,
+      color var(--transition-duration) ease;
+  } */
+
+  :root {
+    --transition-duration: 0.2s;
+  }
+
   body {
     @apply bg-background text-foreground;
+
+    transition: all 0.2s linear !important;
   }
 }

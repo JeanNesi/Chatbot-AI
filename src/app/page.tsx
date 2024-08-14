@@ -10,7 +10,7 @@ export default function Home() {
     <div className="flex flex-col min-h-screen">
       <Header />
 
-      <main className="px-6 pt-2 flex flex-col gap-4 overflow-auto h-[calc(100vh_-_165px)]">
+      <main className="px-6 pt-2 flex flex-col gap-4 overflow-auto w-full h-[calc(100vh_-_188px)] prose prose-slate prose-sm max-w-none">
         {messages.map((message) => (
           <Message
             key={message.id}
