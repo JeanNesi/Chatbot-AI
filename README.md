@@ -1,8 +1,5 @@
 ## CHATBOT
 
-Aplicação:
-![image](https://github.com/user-attachments/assets/96264acf-85f6-4093-82c6-f1cc6aa9d581)
-
 ### Ollama
 
 Para começar, é necessário instalar o [Ollama](https://ollama.com/) em seu computador. O Ollama é um modelo de linguagem de grande porte (LLM) que roda localmente, permitindo que você tenha controle total sobre seus dados e privacidade.
@@ -42,3 +39,8 @@ npm run dev
 ```
 
 Abra http://localhost:3000 em seu navegador para ver o resultado.
+
+![image](https://github.com/user-attachments/assets/96264acf-85f6-4093-82c6-f1cc6aa9d581)
+
+![image](https://github.com/user-attachments/assets/39822e4c-491c-47b0-ad41-538d9ac424f1)
+
