@@ -16,7 +16,7 @@ ollama pull gemma2
 
 ##
 
-### Rodando o projeto NextJs
+### Rodando o projeto Next.js
 
 Clone este repositório:
 ```bash
